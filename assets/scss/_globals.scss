@@ -1,0 +1,89 @@
+:root {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  --tw-bg-opacity: 1;
+}
+
+body {
+  position: relative;
+  background-color: rgb(36 32 33 / var(--tw-bg-opacity));
+  color: rgb(234 233 232 / var(--tw-text-opacity));
+  font-family: 'Archivo', -apple-system, Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(100vw / 320 * 10);
+  line-height: 1.5;
+  margin: 0;
+  width: 100%;
+
+  .noise {
+    pointer-events: none;
+    background-image: url('https://i.ibb.co/4gy2n8K/noise.png');
+    background-size: 50%;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9999;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #13191b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-button {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(36 32 33 / var(--tw-bg-opacity));
+    border: 0px none #000;
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background: rgb(234 233 232 / var(--tw-bg-opacity));
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 9px;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-corner {
+    background: transparent;
+}
