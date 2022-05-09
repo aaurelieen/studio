@@ -1,12 +1,12 @@
 <template>
 <header>
   <NuxtLink to="/" class="logo">
-    ANWH
-    </NuxtLink>
+    <img src="@/assets/img/logo1.svg" />
+  </NuxtLink>
   <nav>
     <ul>
       <li class="link"><NuxtLink to="/work">Work</NuxtLink></li>
-      <li class="link"><a href="/">About</a></li>
+      <li class="link"><NuxtLink to="/" >About</NuxtLink></li>
     </ul>
   </nav>
 </header>
@@ -14,7 +14,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
@@ -35,6 +34,10 @@ export default {
     );
     line-height: 2.75rem;
     position: relative;
+
+    img {
+      width: 100px;
+    }
   }
 
   nav {
