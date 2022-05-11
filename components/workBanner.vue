@@ -1,10 +1,12 @@
 <template>
-    <h1 class="work__title">Works</h1>
+    <main>
+      <h1 class="work__title">Works</h1>
+    </main>
 </template>
 
 <script>
 export default {
-
+  
 }
 </script>
 

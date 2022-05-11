@@ -13,7 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script : [
+      { src : '/js/index.js', body : true }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
